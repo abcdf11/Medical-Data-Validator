@@ -24,7 +24,7 @@ The dataset used to test this pipeline (`medications.csv`) was generated using [
 
 ## 📊 Sample Output
 
-When running the pipeline against a dirty dataset(`medications_2.csv`), the terminal generates an easy-to-read audit report.In the example below, the script acts as a Bouncer, catching "junk" columns injected into the CSV and stopping the pipeline before corrupted data can be processed::
+When running the pipeline against a dirty dataset(`medications_2.csv`), the terminal generates an easy-to-read audit report.In the example below, the script acts as a Bouncer, catching "junk" columns injected into the CSV and stopping the pipeline before corrupted data can be processed:
 ```text
 Error: Invalid Format. Extra unknown columns detected: {'Unnamed: 13', 'adsasd'}
 Pipeline stopped because the file format was invalid.
