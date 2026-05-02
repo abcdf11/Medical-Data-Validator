@@ -24,16 +24,7 @@ The dataset used to test this pipeline (`medications.csv`) was generated using [
 
 ## 📊 Sample Output
 
-When running the pipeline against a dirty dataset, the terminal generates an easy-to-read audit report. Here is an example of the script catching missing codes and invalid payer coverage amounts:
+When running the pipeline against a dirty dataset((`medications.csv`)), the terminal generates an easy-to-read audit report. Here is an example of the script catching missing codes and invalid payer coverage amounts:
 ```text
-Initiating Medical Data Validator...
-----------------------------------------
-✅ Schema Validation: Passed (Format is correct)
-⏳ Content Validation: Scanning records...
-
-⚠️ AUDIT FAILED: Found invalid records:
-  -> Row 4850 (Patient 95f186d2-2d83-20c7-df20-0ce6777098e1) Failed: ['CODE']
-  -> Row 4852 (Patient 95f186d2-2d83-20c7-df20-0ce6777098e1) Failed: ['STOP', 'CODE', 'PAYER_COVERAGE']
-  -> Row 5181 (Patient 95f186d2-2d83-20c7-df20-0ce6777098e1) Failed: ['CODE', 'PAYER_COVERAGE']
-  -> Row 5360 (Patient 7adec7c5-56a4-f1a1-1720-c5e880ae07a5) Failed: ['STOP', 'CODE', 'PAYER_COVERAGE']
-  -> Row 5824 (Patient dd0b60d1-bb3c-0e88-a070-ff083161ce31) Failed: ['STOP', 'CODE']
+Error: Invalid Format. Extra unknown columns detected: {'Unnamed: 13', 'adsasd'}
+Pipeline stopped because the file format was invalid.
