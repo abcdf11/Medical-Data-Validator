@@ -24,7 +24,7 @@ The dataset used to test this pipeline (`medications.csv`) was generated using [
 
 ## 📊 Sample Output
 
-When running the pipeline against a dirty dataset((`medications.csv`)), the terminal generates an easy-to-read audit report. Here is an example of the script catching missing codes and invalid payer coverage amounts:
+When running the pipeline against a dirty dataset(`medications.csv`), the terminal generates an easy-to-read audit report. Here is an example of the script catching missing codes and invalid payer coverage amounts:
 ```text
 Error: Invalid Format. Extra unknown columns detected: {'Unnamed: 13', 'adsasd'}
 Pipeline stopped because the file format was invalid.
